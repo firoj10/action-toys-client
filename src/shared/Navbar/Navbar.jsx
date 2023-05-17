@@ -1,15 +1,24 @@
 import { Link } from "react-router-dom";
 
 import icon from "../../assets/33.jpg"
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Tippy from "@tippyjs/react";
 
 const Navbar = () => {
+  const {user, logout} = useContext(AuthContext);
+  const handleLogout = () =>{
+    logout()
+    .then(()=>{})
+    .catch(error=>console.error(error)) 
+}
   const navItems = <>
     <li className="text-white  font-bold"><Link to="/">Home</Link></li>
-    <li className="text-white font-bold "><Link to="/about">All Toys</Link></li>
+    <li className="text-white font-bold "><Link to="/alltoys">All Toys</Link></li>
     <>
-      <li className="text-white  font-bold"><Link to="/bookings">My Toys</Link></li>
-      <li className="text-white font-bold "><Link to="/bookings">Blogs</Link></li>
-      <li className="text-white font-bold "><Link to="/bookings">Login</Link></li>
+      <li className="text-white  font-bold"><Link to="myToys">My Toys</Link></li>
+      <li className="text-white font-bold "><Link to="">Blogs</Link></li>
+ 
 
 
     </>
@@ -44,7 +53,18 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-
+      {user &&   
+                    
+                    <Tippy className='text-light bg-dark' content={user?.displayName}>
+                      <img className='rounded-full h-12 w-12'  src={user?.photoURL}  />
+                    </Tippy>
+                     }
+                     {
+     user ? <>
+     <button className="text-white font-bold"
+      onClick={handleLogout}>Logout</button>
+     </>  : <Link to='/login'><button className='className="text-white font-bold"' >Login</button></Link>
+   }
 
       </div>
     </div>
