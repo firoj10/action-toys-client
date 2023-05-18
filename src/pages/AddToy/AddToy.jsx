@@ -1,7 +1,9 @@
-import { useState } from "react";
+import {useState } from "react";
+// import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const AddToy = () => {
+    // const {user}= useContext(AuthContext)
     const [selectedValue, setSelectedValue] = useState('');
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
@@ -21,11 +23,12 @@ const AddToy = () => {
         const subcategoris =selectedValue;
 
 
-        const newToy = { name, sellername, selleremail, price, availablequantity, 
-            detaildescription, rating,photo, subcategoris}
-        console.log(newToy);
+        name
+        const newToy = { photo,name,  sellername, selleremail,subcategoris, price, rating, availablequantity, 
+            detaildescription }
+       
         //send data to server
-        fetch('http://localhost:5000/addToy', {
+        fetch('http://localhost:5000/actionToy', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -74,7 +77,7 @@ const AddToy = () => {
                             <span className="label-text">Seller email</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="selleremail" placeholder="seller email"
+                            <input type="text"  name="selleremail" placeholder="seller email"
                                 className="input input-bordered w-full" />
                         </label>
                     </div>
@@ -149,7 +152,7 @@ const AddToy = () => {
                 </div>
 
 
-                <input type="submit" value="add Coffee" className="btn btn-block" />
+                <input type="submit" value="add Toy" className="btn btn-block" />
             </form>
         </div>
     );
