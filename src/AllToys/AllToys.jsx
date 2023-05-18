@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const AllToys = () => {
     const actionToys = useLoaderData();
-    console.log(actionToys.length)
+    // console.log(actionToys.length)
 
     return (
   <div className="text-center mx-auto">

@@ -2,7 +2,7 @@
 import img from "../../../assets/1.jpg"
 const Banner = () => {
   return (
-    <div className=" ">
+    <div className="pt-20 pb-40 ">
     <div className="  flex-none md:flex py-8 ">
   <div className=' text-center md:w-1/2 md:h-full'>
   <img src={img} className=" md:w-100 rounded-lg shadow-2xl" />

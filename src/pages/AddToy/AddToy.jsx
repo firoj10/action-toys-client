@@ -1,9 +1,10 @@
-import {useState } from "react";
+import {useContext, useState } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 // import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const AddToy = () => {
-    // const {user}= useContext(AuthContext)
+    const {user}= useContext(AuthContext)
     const [selectedValue, setSelectedValue] = useState('');
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
@@ -77,7 +78,7 @@ const AddToy = () => {
                             <span className="label-text">Seller email</span>
                         </label>
                         <label className="input-group">
-                            <input type="text"  name="selleremail" placeholder="seller email"
+                            <input type="text" defaultValue={user?.email} name="selleremail" placeholder="seller email"
                                 className="input input-bordered w-full" />
                         </label>
                     </div>
