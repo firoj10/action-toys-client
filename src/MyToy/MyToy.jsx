@@ -68,7 +68,7 @@ const MyToy = () => {
                 return (
                     <tr key={data._id}>
                         <td>{data?._id}</td>
-                        <td >{data?.detaildescription}</td>
+                        <td >{data?.sellername}</td>
                         <td >{data?.name}</td>
                         <td >{data?.subcategoris}</td>
                         <td >{data?.price}</td>

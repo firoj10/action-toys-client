@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
@@ -10,10 +10,7 @@ const ErrorPage = () => {
                 <img className="hidden md:block lg:hidden" src="https://i.ibb.co/c1ggfn2/Group-193.png" />
                 <img className="md:hidden" src="https://i.ibb.co/8gTVH2Y/Group-198.png" />
             </div>
-           
-              
                 <Link to="/"><button className="w-full lg:w-auto my-4 rounded-md px-1 sm:px-16 py-5 bg-indigo-600 text-white">Go back to Homepage</button></Link>
-       
         </div>
         </div>
     );
