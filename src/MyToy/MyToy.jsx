@@ -1,28 +1,54 @@
 import { useContext, useEffect, useState,  } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Link } from "react-router-dom";
-
-
-
-
+import Swal from "sweetalert2";
 
 const MyToy = () => {
   const { user } = useContext(AuthContext);
-  const [jobs, setJobs] = useState(null);
-
- 
-  console.log()
+  const [mytoys, setmytoys] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:5000/myToy/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
-        setJobs(data);
-   
-   
+        setmytoys(data);
       });
   }, [user]);
-    console.log(jobs)
+ 
+  const handleDelet = _id =>{
+    console.log(_id)
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+
+        if(result.isConfirmed){
+          fetch(`http://localhost:5000/actionToy/${_id}`,{
+            method: 'DELETE'
+          })
+          .then(res => res.json())
+          .then(data=>{
+            console.log(data);
+            if(data.deletedCount > 0){
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+              const remaining = mytoys.filter(cof=> cof._id !==_id);
+              setmytoys(remaining);
+            }
+          })
+        }
+    })
+  }
+
+
     return (
       <div className="text-center mx-auto">
       <table className="table">
@@ -35,21 +61,22 @@ const MyToy = () => {
                 <th>price</th>
                 <th>Available quantity</th>
                 <th>Action</th>
-            
             </tr>
         </thead>
         <tbody>
-            {jobs?.map((data) => {
+            {mytoys?.map((data) => {
                 return (
                     <tr key={data._id}>
-                        <td></td>
+                        <td>{data?._id}</td>
                         <td >{data?.detaildescription}</td>
                         <td >{data?.name}</td>
                         <td >{data?.subcategoris}</td>
                         <td >{data?.price}</td>
                         <td >{data?.availablequantity}</td>
-                       
-                    <Link to={`/toyDetails/${data._id}`}><button className="btn btn-accent">View Details</button></Link>
+                    <Link to={`/updateToy/${data._id}`}><button className="btn btn-accent">Update Toy</button></Link>
+                    <button
+  onClick={()=>handleDelet(data._id)}
+  className="btn">Delete</button>
                     </tr>
                 );
             })}

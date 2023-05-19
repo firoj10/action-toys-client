@@ -21,10 +21,10 @@ const AddToy = () => {
         const rating = form.rating.value;
         const detaildescription = form.detaildescription.value;
         const photo = form.photo.value;
-        const subcategoris =selectedValue;
+        const subcategoris =form.select.value;
 
 
-        name
+    
         const newToy = { photo,name,  sellername, selleremail,subcategoris, price, rating, availablequantity, 
             detaildescription }
        
@@ -57,7 +57,7 @@ const AddToy = () => {
                         </label>
                         <label className="input-group">
                             <input type="text" name="name" placeholder="coffee Name"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required />
                         </label>
                     </div>
                     <div className="form-control  md:w-1/2 ml-4">
@@ -67,7 +67,7 @@ const AddToy = () => {
                         <label className="input-group">
 
                             <input type="text" placeholder="seller name" name="sellername"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required />
                         </label>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const AddToy = () => {
                         </label>
                         <label className="input-group">
                             <input type="text" defaultValue={user?.email} name="selleremail" placeholder="seller email"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required />
                         </label>
                     </div>
                     <div className="form-control  md:w-1/2 ml-4">
@@ -89,7 +89,7 @@ const AddToy = () => {
                         <label className="input-group">
 
                             <input type="text" placeholder="Price" name="price"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required />
                         </label>
                     </div>
                 </div>
@@ -102,18 +102,18 @@ const AddToy = () => {
                         <label className="input-group">
 
                             <input type="text" name="availablequantity" placeholder="Available quantity"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-4">
                         <label className="label">
                             <span className="label-text">Sub category</span>
                         </label>
-                        <select value={selectedValue} onChange={handleChange}>
+                        <select name="select" value={selectedValue} onChange={handleChange}>
                             <option value="">Select an option</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
+                            <option value="male-hero">Male hero</option>
+                        <option value="female-hero">female hero</option>
+                        <option value="children-hero">children hero</option>
                         </select>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ const AddToy = () => {
                         </label>
                         <label className="input-group">
                             <input type="number" name="rating" placeholder="Rating"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required/>
                         </label>
                     </div>
                     <div className="form-control  md:w-1/2 ml-4">
@@ -135,7 +135,7 @@ const AddToy = () => {
                         <label className="input-group">
 
                             <input type="text" placeholder="Detail description" name="detaildescription"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required />
                         </label>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ const AddToy = () => {
                         <label className="input-group">
 
                             <input type="text" name="photo" placeholder="Photo Url"
-                                className="input input-bordered w-full" />
+                                className="input input-bordered w-full" required />
                         </label>
                     </div>
                 </div>
