@@ -36,7 +36,7 @@ const Login = () => {
    
       })
       .catch((error) => {
-        const errorMessage = error.message;
+    console.log (error.message)
         setError('users email or password doesnt match')
       })
 }
@@ -79,11 +79,12 @@ const Login = () => {
 <input className="btn btn-primary" type="submit" value="Login" />
 
 </div>
-<button onClick={handleGoogleSignIn}  className='m-2 bg-success text-light' variant="outline-primary">
+<button onClick={handleGoogleSignIn}  className='m-2 bg-success text-light' >
         
              <FaGoogle /> Login with Google</button>
 </form>
 <p className='my-4 text-center'>New to Car Doctors <Link className='text-orange-600' to="/register">Login now</Link></p>
+<p className="text-danger">{error}</p>
 </div>
 </div>
 </div> 

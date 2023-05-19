@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 
 
@@ -5,7 +6,13 @@ import { Link, useLoaderData } from "react-router-dom";
 const AllToys = () => {
     const actionToys = useLoaderData();
     // console.log(actionToys.length)
+    const [results, setResults] = useState(actionToys.slice(0, 20));
+    const [showAll, setShowAll] = useState(false);
 
+    const showAllResults = () => {
+      setResults(actionToys);
+      setShowAll(true);
+    };
     return (
   <div className="text-center mx-auto">
           <table className="table">
@@ -22,7 +29,7 @@ const AllToys = () => {
                 </tr>
             </thead>
             <tbody>
-                {actionToys.map((data, index) => {
+                {results.map((data, index) => {
                     return (
                         <tr key={index}>
                             <td>{index + 1}</td>
@@ -36,6 +43,9 @@ const AllToys = () => {
                         </tr>
                     );
                 })}
+        {!showAll && (
+        <button   className="btn btn-accent text-center" onClick={showAllResults}>Show All</button>
+      )}
             </tbody>
         </table>
   </div>

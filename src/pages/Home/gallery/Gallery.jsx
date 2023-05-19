@@ -13,75 +13,69 @@ const Gallery = () => {
    
     <div className="justify-center items-center">
     <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src={img6} alt="Shoes" /></figure>
-  <div className="card-body">
+  <div className="card-body items-center">
+  <figure><img  className="h-18 w-18"  src={img6} alt="Shoes" /></figure>
     <h2 className="card-title">Shoes!</h2>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
+   
   </div>
 </div> 
      </div>
+   
     <div className="justify-center items-center">
     <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src={img3} alt="Shoes" /></figure>
-  <div className="card-body">
+  <div className="card-body items-center">
+  <figure><img  className="h-25 w-25"  src={img5} alt="Shoes" /></figure>
     <h2 className="card-title">Shoes!</h2>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
+   
   </div>
-</div>
-</div>
-<div className="justify-center items-center ">
-    <div className="card  bg-base-100 shadow-xl">
-  <div className="  text-center"><figure ><img src={img2} alt="Shoes" /></figure></div>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
+</div> 
      </div>
+   
+    <div className="justify-center items-center">
+    <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body items-center">
+  <figure><img  className="h-25 w-25"  src={img4} alt="Shoes" /></figure>
+    <h2 className="card-title">Shoes!</h2>
+   
+  </div>
+</div> 
+     </div>
+   
+    <div className="justify-center items-center">
+    <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body items-center">
+  <figure><img  className="h-25 w-25" src={img3} alt="Shoes" /></figure>
+    <h2 className="card-title">Shoes!</h2>
+   
+  </div>
+</div> 
+     </div>
+   
+    <div className="justify-center items-center">
+    <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body items-center">
+  <figure><img  className="h-25 w-25"  src={img2} alt="Shoes" /></figure>
+    <h2 className="card-title">Shoes!</h2>
+   
+  </div>
+</div> 
+     </div>
+   
+    <div className="justify-center items-center">
+    <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body items-center">
+  <figure><img  className="h-25 w-25"  src={img1} alt="Shoes" /></figure>
+    <h2 className="card-title">Shoes!</h2>
+   
+  </div>
+</div> 
+     </div>
+
+
      
     
-    <div className="justify-center items-center">
-    <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src={img4} alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-     
-     </div>
-    <div className="justify-center items-center">
-    <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src={img5} alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-     
-     </div>
-    <div className="justify-center items-center">
-    <div className="card w-86 bg-base-100 shadow-xl">
-  <figure><img src={img1} alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-     
-     </div>
+ 
+   
    
   
 

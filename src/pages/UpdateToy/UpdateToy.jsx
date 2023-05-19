@@ -9,7 +9,7 @@ const UpdateToy = () => {
     const [selectedValue, setSelectedValue] = useState('');
 
 const toys = useLoaderData()
-const {_id, photo, name,  sellername, price, subcategoris, rating, availablequantity, 
+const {_id, photo, name,  sellername, price,  rating, availablequantity, 
     detaildescription } = toys;
 
     const handleChange = (event) => {
