@@ -1,21 +1,43 @@
 
-import img from "../../../assets/1.jpg"
+import img1 from "../../../assets/ww.jpg"
+import img2 from "../../../assets/b2.jpg"
+import img3 from "../../../assets/1.jpg"
+import img4 from "../../../assets/wwww.jpg"
 const Banner = () => {
   return (
-    <div className="pt-20 pb-40 ">
-    <div className="  flex-none md:flex py-8 ">
-  <div className=' text-center md:w-1/2 md:h-full'>
-  <img src={img} className=" md:w-100 rounded-lg shadow-2xl" />
- 
-  </div>
-      <div className=' space-y-1 w-1/2 p-2'>
-      
-        <h1 className="text-5xl font-bold">We are qualified & of experience in this field</h1>
-        <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which  look even slightly believable. </p>
-        <button className="btn btn-primary">Get More info</button>
+
+
+    <div className="carousel w-full">
+    <div id="slide1" className="carousel-item relative w-full">
+      <img src={img1} className="w-full rounded-md" />
+      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" className="btn btn-circle">❮</a> 
+        <a href="#slide2" className="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide2" className="carousel-item relative w-full">
+      <img src={img2} className="w-full rounded-md" />
+      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" className="btn btn-circle">❮</a> 
+        <a href="#slide3" className="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" className="carousel-item relative w-full">
+      <img src={img3} className="w-full rounded-md" />
+      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" className="btn btn-circle">❮</a> 
+        <a href="#slide4" className="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" className="carousel-item relative w-full">
+      <img src={img4} className="w-full rounded-md" />
+      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" className="btn btn-circle">❮</a> 
+        <a href="#slide1" className="btn btn-circle">❯</a>
       </div>
     </div>
   </div>
+  
   );
 };
 

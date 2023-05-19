@@ -5,16 +5,36 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const AllToys = () => {
     const actionToys = useLoaderData();
-    // console.log(actionToys.length)
     const [results, setResults] = useState(actionToys.slice(0, 20));
     const [showAll, setShowAll] = useState(false);
+  const [searchText, setSearchText] = useState("");
 
     const showAllResults = () => {
       setResults(actionToys);
       setShowAll(true);
     };
+
+    const handleSearch = () => {
+        fetch(`http://localhost:5000/toySearchByName/${searchText}`)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            setResults(data);
+          });
+      };
+
+
     return (
   <div className="text-center mx-auto">
+     <div className="search-box p-2 text-center">
+          <input className="input input-bordered w-full max-w-xs"
+            onChange={(e) => setSearchText(e.target.value)}
+            type="text"
+          
+          />{" "}
+          <button className="btn btn-success" onClick={handleSearch}>Search</button>
+      
+        </div>
           <table className="table">
             <thead>
                 <tr>

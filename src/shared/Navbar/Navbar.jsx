@@ -68,11 +68,7 @@ const Navbar = () => {
                       <img className='rounded-full h-12 w-12'  src={user?.photoURL}  />
                     </Tippy>
                      }
-                     {/* {
-     user ? <>
-    
-     </>  : 
-   } */}
+              
 
       </div>
     </div>
