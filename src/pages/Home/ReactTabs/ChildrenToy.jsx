@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
 
+import { Link } from "react-router-dom";
 
 const ChildrenToy = ({childrenToy}) => {
     const {_id, photo,name,  price, rating,  
     } = childrenToy;
+
+
 return (
 
      <div className="card w-96 bg-base-100 shadow-xl">

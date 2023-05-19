@@ -97,7 +97,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                     </label>
                     <label className="input-group">
 
-                        <input type="text" placeholder="Price" defaultValue={price} name="price"
+                        <input type="number" placeholder="Price" defaultValue={price} name="price"
                             className="input input-bordered w-full" required/>
                     </label>
                 </div>

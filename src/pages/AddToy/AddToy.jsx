@@ -1,10 +1,15 @@
-import {useContext, useState } from "react";
+import {useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 // import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const AddToy = () => {
+
+    useEffect(()=>{
+        document.title = "Icon | add Toy"
+    })
+
     const {user}= useContext(AuthContext)
     const [selectedValue, setSelectedValue] = useState('');
     const handleChange = (event) => {
@@ -17,7 +22,7 @@ const AddToy = () => {
         const name = form.name.value;
         const sellername = form.sellername.value;
         const selleremail = form.selleremail.value;
-        const price = form.price.value;
+        const price = parseInt(form.price.value);
         const availablequantity = form.availablequantity.value;
         const rating = form.rating.value;
         const detaildescription = form.detaildescription.value;
@@ -94,7 +99,7 @@ const AddToy = () => {
                         </label>
                         <label className="input-group">
 
-                            <input type="text" placeholder="Price" name="price"
+                            <input type="number" placeholder="Price" name="price"
                                 className="input input-bordered w-full" required />
                         </label>
                     </div>

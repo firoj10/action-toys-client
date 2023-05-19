@@ -1,5 +1,6 @@
 
 
+import { useEffect } from "react";
 import ErrorPage from "../../ErrorPage/ErrorPage";
 import Products from "../../Products/Products";
 import Reviews from "../../Reviews/Reviews";
@@ -11,6 +12,9 @@ import Gallery from "../gallery/Gallery";
 
 
 const Home = () => {
+    useEffect(()=>{
+        document.title = "Icon | Home"
+    })
     return (
         <div>
        <Banner></Banner>

@@ -1,8 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
 const MaleToy = ({maleToy}) => {
- 
+  useEffect(()=>{
+    document.title = "Icon | Home"
+})
 
 
     const {_id, photo,name,  price, rating,  

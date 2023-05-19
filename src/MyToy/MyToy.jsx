@@ -5,15 +5,21 @@ import Swal from "sweetalert2";
 
 const MyToy = () => {
   const { user } = useContext(AuthContext);
-  const [mytoys, setmytoys] = useState(null);
+  const [mytoys, setmytoys] = useState([]);
+  const [sortOrder, setSortOrder] = useState('asc');
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myToy/${user?.email}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setmytoys(data);
-      });
+    fetchData()
   }, [user]);
+
+
+  const fetchData = ()=>{
+    fetch(`http://localhost:5000/myToy/${user?.email}`)
+    .then((res) => res.json())
+    .then((data) => {
+      setmytoys(data);
+    });
+  }
  
   const handleDelet = _id =>{
     console.log(_id)
@@ -48,9 +54,15 @@ const MyToy = () => {
     })
   }
 
+  const handleSortClick = () => {
+    const newSortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+    setSortOrder(newSortOrder);
+    fetchData();
+  };
 
     return (
       <div className="text-center mx-auto">
+         <button className="btn btn-accent" onClick={handleSortClick}>Sort by Price</button>
       <table className="table">
         <thead>
             <tr>
