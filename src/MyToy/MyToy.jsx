@@ -9,20 +9,21 @@ const MyToy = () => {
 })
   const { user } = useContext(AuthContext);
   const [mytoys, setmytoys] = useState([]);
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [isAsc, setIsAsc] = useState(true);
+
+
 
   useEffect(() => {
-    fetchData()
-  }, [user]);
-
-
-  const fetchData = ()=>{
-    fetch(`http://localhost:5000/myToy/${user?.email}`)
+    fetch(`http://localhost:5000/myToy/${user?.email}?order=${ isAsc ? 'asc' : 'desc'}`)
     .then((res) => res.json())
     .then((data) => {
       setmytoys(data);
+      console.log(data)
     });
-  }
+  }, [ isAsc, user ]);
+
+
+  
  
   const handleDelet = _id =>{
     console.log(_id)
@@ -57,15 +58,10 @@ const MyToy = () => {
     })
   }
 
-  const handleSortClick = () => {
-    const newSortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
-    setSortOrder(newSortOrder);
-    fetchData();
-  };
-
+  
     return (
       <div className="text-center mx-auto">
-         <button className="btn btn-accent" onClick={handleSortClick}>Sort by Price</button>
+         <button className='btn btn-ghost' onClick={() => setIsAsc(!isAsc)}>{isAsc ? 'desc' : 'asc'}</button>
       <table className="table">
         <thead>
             <tr>

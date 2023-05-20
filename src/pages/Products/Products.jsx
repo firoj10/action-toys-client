@@ -12,7 +12,7 @@ const Products = () => {
         
         
         <div  className="focus:outline-none">
-    <h2 className="text-center text-4xl pt-40 pb-10 font-bold text-orange-900">New SuperHeros</h2>
+    <h2 className="text-center text-4xl pt-40 mt-6  font-bold text-orange-900">New SuperHeros</h2>
             <div className="mx-auto container py-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2">
                 {/* <div className="flex flex-wrap items-center lg:justify-between justify-center"> */}
                  

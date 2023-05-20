@@ -89,9 +89,9 @@ const Register = () => {
 
       </div>
       </form>
-      <p className='my-4 text-center'>already logged in<Link className='text-orange-600' to="/login">Login  now</Link></p>
+      <p className='my-4 text-center'>already logged in<Link className='text-orange-600 text-2xl' to="/login">Login  now</Link></p>
     </div>
-    <div><p className='text-danger'>{error}</p></div>
+    <div><p className='text-orange-600 font-bold text-2xl'>{error}</p></div>
   </div>
 </div>
     );
