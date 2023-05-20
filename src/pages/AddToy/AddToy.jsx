@@ -1,13 +1,12 @@
-import {useContext, useEffect, useState } from "react";
+import {useContext,  useEffect,  useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 // import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const AddToy = () => {
-
     useEffect(()=>{
-        document.title = "Icon | add Toy"
+        document.title = " | AddToy"
     })
 
     const {user}= useContext(AuthContext)

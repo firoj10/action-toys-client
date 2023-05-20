@@ -1,10 +1,13 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaGoogle} from "react-icons/fa";
 
 
 const Login = () => {
+  useEffect(()=>{
+    document.title = " | Login"
+})
   const { sinInWithGoogle,  singIn} = useContext(AuthContext)
   const navigate = useNavigate();
   const location = useLocation();
@@ -65,13 +68,13 @@ const Login = () => {
 <label className="label">
  <span className="label-text">Email</span>
 </label>
-<input type="email"  name="email" placeholder="email" className="input input-bordered" />
+<input type="email"  name="email" placeholder="email" className="input input-bordered" required/>
 </div>
 <div className="form-control">
 <label className="label">
  <span className="label-text">Password</span>
 </label>
-<input type="password" name="password" placeholder="password" className="input input-bordered" />
+<input type="password" name="password" placeholder="password" className="input input-bordered" required/>
 
 </div>
 
@@ -79,11 +82,11 @@ const Login = () => {
 <input className="btn btn-primary" type="submit" value="Login" />
 
 </div>
-<button onClick={handleGoogleSignIn}  className='m-2 bg-success text-light' >
+<button onClick={handleGoogleSignIn}  className='m-2 bg-success text-light flex items-center text-2xl p-3 rounded-md' >
         
              <FaGoogle /> Login with Google</button>
 </form>
-<p className='my-4 text-center'>New to Car Doctors <Link className='text-orange-600' to="/register">Login now</Link></p>
+<p className='my-4 text-center'>New to Car Doctors <Link className='text-orange-600' to="/register">Register now</Link></p>
 <p className="text-danger">{error}</p>
 </div>
 </div>

@@ -1,7 +1,6 @@
 
 
 import { useEffect } from "react";
-import ErrorPage from "../../ErrorPage/ErrorPage";
 import Products from "../../Products/Products";
 import Reviews from "../../Reviews/Reviews";
 import Banner from "../Banner/Banner";
@@ -23,7 +22,7 @@ const Home = () => {
        <Products></Products>
 
       <Reviews></Reviews>
-      <ErrorPage></ErrorPage>
+   
         </div>
     );
 };

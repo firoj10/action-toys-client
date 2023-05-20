@@ -1,8 +1,11 @@
-import React, { useContext, useState } from 'react';
+import  { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Register = () => {
+  useEffect(()=>{
+    document.title = " | Register"
+})
 
   const { createUser, updateUserProfile } = useContext(AuthContext);
   const [error, setError] = useState('')
@@ -59,34 +62,34 @@ const Register = () => {
         <label className="label">
           <span className="label-text">name</span>
         </label>
-        <input type="text"  name="name" placeholder="email" className="input input-bordered" />
+        <input type="text"  name="name" placeholder="email" className="input input-bordered" required/>
       </div>
       <div className="form-control">
         <label className="label">
           <span className="label-text">Email</span>
         </label>
-        <input type="email"  name="email" placeholder="email" className="input input-bordered" />
+        <input type="email"  name="email" placeholder="email" className="input input-bordered"  required/>
       </div>
      
       <div className="form-control">
         <label className="label">
           <span className="label-text">Password</span>
         </label>
-        <input type="password" name='password' placeholder="password" className="input input-bordered" />
+        <input type="password" name='password' placeholder="password" className="input input-bordered" required/>
         
       </div>
       <div className="form-control">
         <label className="label">
           <span className="label-text">Photo Url</span>
         </label>
-        <input type="text" name="photoURL"placeholder="Photo url" className="input input-bordered" />
+        <input type="text" name="photoURL"placeholder="Photo url" className="input input-bordered"  required/>
       </div>
       <div className="form-control mt-6">
-      <input className="btn btn-primary" type="submit" value="Register" />
+      <input className="btn btn-primary" type="submit" value="Register"  />
 
       </div>
       </form>
-      <p className='my-4 text-center'>New to Super Toys <Link className='text-orange-600' to="/login">Register  now</Link></p>
+      <p className='my-4 text-center'>already logged in<Link className='text-orange-600' to="/login">Login  now</Link></p>
     </div>
     <div><p className='text-danger'>{error}</p></div>
   </div>

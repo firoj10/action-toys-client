@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const MyToy = () => {
+  useEffect(()=>{
+    document.title = " | MyToy"
+})
   const { user } = useContext(AuthContext);
   const [mytoys, setmytoys] = useState([]);
   const [sortOrder, setSortOrder] = useState('asc');

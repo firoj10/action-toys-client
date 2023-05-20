@@ -1,10 +1,13 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useLoaderData } from "react-router-dom";
 
 
 const UpdateToy = () => {
+    useEffect(()=>{
+        document.title = "Icon | Update"
+    })
     const {user}= useContext(AuthContext)
     const [selectedValue, setSelectedValue] = useState('');
 

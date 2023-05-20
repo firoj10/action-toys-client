@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 
 
 
 const AllToys = () => {
+  useEffect(()=>{
+    document.title = " | AllToys"
+})
     const actionToys = useLoaderData();
     const [results, setResults] = useState(actionToys.slice(0, 20));
     const [showAll, setShowAll] = useState(false);

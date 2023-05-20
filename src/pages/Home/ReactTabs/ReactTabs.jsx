@@ -44,16 +44,17 @@ const ReactTabs = () => {
 
     return (
         <div className='text-center'>
+          <h2 className='text-4xl font-bold pt-60 pb-10  text-orange-900'>Super Hero Categories </h2>
       <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
         <TabList>
-          <Tab>Male Toys</Tab>
-          <Tab>Female Toys</Tab>
-          <Tab>Children Toys</Tab>
+          <Tab >Male Toys</Tab>
+          <Tab >Female Toys</Tab>
+          <Tab >Children Toys</Tab>
         </TabList>
 
         <TabPanel>
-          <h2>Male Toys</h2>
-          <div className="flex text-center">
+          <h2  className=' text-orange-900'>Male Toys</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4">
   {
 
   maleToys?.map(maleToy => <MaleToy key={maleToy._id} maleToy={maleToy}></MaleToy>
@@ -61,8 +62,8 @@ const ReactTabs = () => {
   }</div>
         </TabPanel>
         <TabPanel>
-          <h2>Female Toys</h2>
-          <div className="flex text-center">
+          <h2 className=' text-orange-900'>Female Toys</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4">
   {
 
 femaleToys?.map(femaleToy => <FemaleToy key={femaleToy._id} femaleToy={femaleToy}></FemaleToy>
@@ -70,7 +71,7 @@ femaleToys?.map(femaleToy => <FemaleToy key={femaleToy._id} femaleToy={femaleToy
   }</div>
         </TabPanel>
         <TabPanel>
-          <h2>Children Toys</h2>
+          <h2 className=' text-orange-900'>Children Toys</h2>
           <div className="grid grid-cols-1 md:grid-cols-4">
   {
 
