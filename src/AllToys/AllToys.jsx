@@ -33,9 +33,9 @@ const AllToys = () => {
           <input className="input input-bordered w-full max-w-xs"
             onChange={(e) => setSearchText(e.target.value)}
             type="text"
-          
+          placeholder=" search toy name"
           />{" "}
-          <button className="btn btn-success" onClick={handleSearch}>Search</button>
+          <button className="p-3 text-white bg-orange-900 rounded" onClick={handleSearch}>Search</button>
       
         </div>
           <table className="table">
@@ -62,12 +62,12 @@ const AllToys = () => {
                             <td >{data.price}</td>
                             <td >{data.availablequantity}</td>
                            
-                        <Link to={`/toyDetails/${data._id}`}><button className="btn btn-accent">View Details</button></Link>
+                        <Link to={`/toyDetails/${data._id}`}><button className="p-3 text-white bg-orange-900 rounded">View Details</button></Link>
                         </tr>
                     );
                 })}
         {!showAll && (
-        <button   className="btn btn-accent text-center" onClick={showAllResults}>Show All</button>
+        <button   className="p-3 m-4 text-center text-white bg-orange-900 rounded" onClick={showAllResults}>Show All</button>
       )}
             </tbody>
         </table>

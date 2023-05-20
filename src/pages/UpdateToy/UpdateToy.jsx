@@ -34,7 +34,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
 
 
     
-        const updateToy = { photo,name,  sellername, selleremail,subcategoris, price, rating, availablequantity, 
+        const updateToy = { photo,  sellername, price, rating, availablequantity, 
             detaildescription }
 
             fetch(`http://localhost:5000/actionToy/${_id}`,{
@@ -71,8 +71,8 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                         <input type="text" defaultValue={name}  name="name" placeholder="coffee Name"
                             className="input input-bordered w-full" required/>
                     </label>
-                </div>
-                <div className="form-control  md:w-1/2 ml-4">
+                </div> 
+                 <div className="form-control  md:w-1/2 ml-4">
                     <label className="label">
                         <span className="label-text">Seller name</span>
                     </label>
@@ -85,7 +85,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
             </div>
 
             <div className="md:flex mb-7">
-                <div className="form-control md:w-1/2 ml-4">
+               <div className="form-control md:w-1/2 ml-4">
                     <label className="label">
                         <span className="label-text">Seller email</span>
                     </label>
@@ -93,7 +93,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                         <input type="text" defaultValue={user?.email} name="selleremail" placeholder="seller email"
                             className="input input-bordered w-full" required/>
                     </label>
-                </div>
+                </div> 
                 <div className="form-control  md:w-1/2 ml-4">
                     <label className="label">
                         <span className="label-text">Price</span>
@@ -117,7 +117,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                             className="input input-bordered w-full" required/>
                     </label>
                 </div>
-                <div className="form-control md:w-1/2 ml-4">
+              <div className="form-control md:w-1/2 ml-4">
                     <label className="label">
                         <span className="label-text">Sub category</span>
                     </label>
@@ -127,11 +127,11 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                         <option value="female-hero">female hero</option>
                         <option value="children-hero">children hero</option>
                     </select>
-                </div>
+                </div> 
             </div>
 
             <div className="md:flex mb-7">
-                <div className="form-control md:w-1/2 ml-4">
+                 <div className="form-control md:w-1/2 ml-4">
                     <label className="label">
                         <span className="label-text">Rating</span>
                     </label>
@@ -139,7 +139,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                         <input type="number" name="rating" defaultValue={rating} placeholder="Rating"
                             className="input input-bordered w-full" required/>
                     </label>
-                </div>
+                </div> 
                 <div className="form-control  md:w-1/2 ml-4">
                     <label className="label">
                         <span className="label-text">Detail description</span>
@@ -151,7 +151,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                     </label>
                 </div>
             </div>
-            <div className="ml-4 mb-7">
+          <div className="ml-4 mb-7">
                 <div className="form-control md-full">
                     <label className="label">
                         <span className="label-text">Photo Url</span>
@@ -162,10 +162,10 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                             className="input input-bordered w-full" required/>
                     </label>
                 </div>
-            </div>
+            </div> 
 
 
-            <input type="submit" value="add Toy" className="btn btn-block" />
+            <input type="submit" value="Update Toy" className="btn btn-block bg-orange-900 text-white" />
         </form>
     </div>
     );

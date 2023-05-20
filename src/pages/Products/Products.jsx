@@ -14,9 +14,9 @@ const Products = () => {
         <div  className="focus:outline-none">
     <h2 className="text-center text-4xl pt-40 mt-6  font-bold text-orange-900">New SuperHeros</h2>
             <div className="mx-auto container py-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-                {/* <div className="flex flex-wrap items-center lg:justify-between justify-center"> */}
+             
                  
-                    <div  className=" bg-base-100 shadow-xl  focus:outline-none mx-2 w-72 xl:mb-0 mb-8 ">
+                    <div  className=" bg-base-100 shadow-xl  focus:outline-none mx-2 w-72 xl:mb-0 mb-8 " data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="person capturing an image" src={m1}   className="focus:outline-none w-full h-44" />
                         </div>
@@ -51,7 +51,7 @@ const Products = () => {
                         </div>
                     </div>
                  
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="person capturing an image" src={m2}  className="focus:outline-none w-full h-44" />
                         </div>
@@ -86,7 +86,7 @@ const Products = () => {
                         </div>
                     </div>
                  
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="person capturing an image" src={m3}  className="focus:outline-none w-full h-44" />
                         </div>
@@ -121,7 +121,7 @@ const Products = () => {
                         </div>
                     </div>
                  
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="person capturing an image" src={m4}  className="focus:outline-none w-full h-44" />
                         </div>
@@ -156,10 +156,9 @@ const Products = () => {
                         </div>
                     </div>
         
-                {/* </div> */}
-                {/* <div className="flex flex-wrap items-center lg:justify-between justify-center pb-10 mt-16"> */}
+               
       
-                    <div  className="bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+                    <div  className="bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="girl texting" src={m5}  className="focus:outline-none w-full h-44" />
                         </div>
@@ -194,7 +193,7 @@ const Products = () => {
                         </div>
                     </div>
                    
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="girl texting" src={m6}  className="focus:outline-none w-full h-44" />
                         </div>
@@ -229,7 +228,7 @@ const Products = () => {
                         </div>
                     </div>
                    
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="girl texting" src={m7}  className="focus:outline-none w-full h-44" />
                         </div>
@@ -264,7 +263,7 @@ const Products = () => {
                         </div>
                     </div>
                    
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
                         <div>
                             <img alt="girl texting" src={m8}  className="focus:outline-none w-full h-44" />
                         </div>
@@ -298,8 +297,7 @@ const Products = () => {
                             </div>
                         </div>
                     </div>
-                
-                {/* </div> */}
+              
             </div>
         </div>
     

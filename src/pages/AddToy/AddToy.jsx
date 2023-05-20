@@ -27,7 +27,7 @@ const AddToy = () => {
         const detaildescription = form.detaildescription.value;
         const photo = form.photo.value;
         const subcategoris =form.select.value;
-
+        form.reset();
 
     
         const newToy = { photo,name,  sellername, selleremail,subcategoris, price, rating, availablequantity, 
@@ -46,10 +46,12 @@ const AddToy = () => {
                 console.log(data)
                 if (data.insertedId) {
                     Swal.fire({
+                       
                         title: 'success',
                         text: 'Toy added successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
+                        
                       })
                 }
             })
@@ -57,7 +59,7 @@ const AddToy = () => {
 
     return (
         <div className="bg-[#F4F3F0] p-24">
-            <h2 className="text-3xl font-extralight">Add A Toy</h2>
+            <h2 className="text-3xl font-extralight  text-orange-900">Add A Toy</h2>
             <form onSubmit={handleSubmit}>
 
                 <div className="md:flex mb-7">
@@ -163,7 +165,7 @@ const AddToy = () => {
                 </div>
 
 
-                <input type="submit" value="add Toy" className="btn btn-block" />
+                <input type="submit" value="Add Toy" className=" btn btn-block bg-orange-900 text-white" />
             </form>
         </div>
     );

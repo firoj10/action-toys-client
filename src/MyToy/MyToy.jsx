@@ -60,34 +60,47 @@ const MyToy = () => {
 
   
     return (
-      <div className="text-center mx-auto">
-         <button className='btn btn-ghost' onClick={() => setIsAsc(!isAsc)}>{isAsc ? 'desc' : 'asc'}</button>
+      <div className="container mx-auto">
+        <div className="text-center">
+        <button className='p-3 my-10 px-8 text-white  bg-orange-900 rounded font-bold' onClick={() => setIsAsc(!isAsc)}>{isAsc ? ' Data Desc' : 'Data Asc'}</button>
+
+        </div>
       <table className="table">
         <thead>
             <tr>
-                <th>Id</th>
+                
+                <th>photo</th>
                 <th>sellername</th>
                 <th>Toy name</th>
                 <th>sub categoris</th>
                 <th>price</th>
-                <th>Available quantity</th>
+                <th>selleremail</th>
+                <th>rating</th>
+                <th>availablequantity</th>
+                <th>details description</th>
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
+
+   
             {mytoys?.map((data) => {
                 return (
                     <tr key={data._id}>
-                        <td>{data?._id}</td>
+                        <td> <img className="h-4 w-5" src={data?.photo} alt="" /></td>
                         <td >{data?.sellername}</td>
                         <td >{data?.name}</td>
                         <td >{data?.subcategoris}</td>
                         <td >{data?.price}</td>
+                        <td >{data?.selleremail}</td>
+                        <td >{data?.rating}</td>
                         <td >{data?.availablequantity}</td>
-                    <Link to={`/updateToy/${data._id}`}><button className="btn btn-accent">Update Toy</button></Link>
+                        <td >{data?.detaildescription}</td>
+                        
+                    <Link to={`/updateToy/${data._id}`}><button className=" p-3 text-white bg-orange-900 rounded">Update Toy</button></Link>
                     <button
   onClick={()=>handleDelet(data._id)}
-  className="btn">Delete</button>
+  className="p-3 text-white bg-orange-900 rounded m-4 text-center">Delete</button>
                     </tr>
                 );
             })}

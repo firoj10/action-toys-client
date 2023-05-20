@@ -55,7 +55,7 @@ const Register = () => {
   
   <div className="">
     <div className="card-body w-3/4 mx-auto">
-    <h1 className="text-3xl font-bold">Login now!</h1>
+    <h1 className="text-3xl font-bold">Register now!</h1>
 
     <form onSubmit={handleSubmit}>
       <div className="form-control">
@@ -85,13 +85,13 @@ const Register = () => {
         <input type="text" name="photoURL"placeholder="Photo url" className="input input-bordered"  required/>
       </div>
       <div className="form-control mt-6">
-      <input className="btn btn-primary" type="submit" value="Register"  />
+      <input className="btn text-white bg-orange-900" type="submit" value="Register"  />
 
       </div>
       </form>
-      <p className='my-4 text-center'>already logged in<Link className='text-orange-600 text-2xl' to="/login">Login  now</Link></p>
+      <p className='my-4 text-center'>already logged in<Link className='text-orange-900 text-2xl underline' to="/login">Login  now</Link></p>
     </div>
-    <div><p className='text-orange-600 font-bold text-2xl'>{error}</p></div>
+    <div><p className='text-orange-900 font-bold text-2xl'>{error}</p></div>
   </div>
 </div>
     );

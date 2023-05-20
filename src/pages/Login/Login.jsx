@@ -61,7 +61,7 @@ const Login = () => {
 
 <div className="">
 <div className="card-body w-3/4 mx-auto">
-<h1 className="text-3xl font-bold">Register now!</h1>
+<h1 className="text-3xl font-bold">Login  now!</h1>
 
 <form onSubmit={handleSingin}>
 <div className="form-control">
@@ -79,15 +79,15 @@ const Login = () => {
 </div>
 
 <div className="form-control mt-6">
-<input className="btn btn-primary" type="submit" value="Login" />
+<input className=  " btn bg-orange-900 text-white " type="submit" value="Login" />
 
 </div>
-<button onClick={handleGoogleSignIn}  className='m-2 bg-success text-light flex items-center text-2xl p-3 rounded-md' >
+<button onClick={handleGoogleSignIn}  className='m-2 bg-orange-900 text-white flex items-center text-2xl p-3 rounded-md' >
         
              <FaGoogle /> Login with Google</button>
 </form>
-<p className='my-4 text-center'>New to Car Doctors <Link className='text-orange-600' to="/register">Register now</Link></p>
-<p className="text-danger">{error}</p>
+<p className='my-4 text-center'>New to Car Doctors <Link className='text-orange-900 text-2xl underline' to="/register">Register now</Link></p>
+<p className="text-orange-900 text-2xl">{error}</p>
 </div>
 </div>
 </div> 
