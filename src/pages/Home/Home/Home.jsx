@@ -10,9 +10,10 @@ import Gallery from "../gallery/Gallery";
 
 
 
+
 const Home = () => {
     useEffect(()=>{
-        document.title = "Icon | Home"
+        document.title = "| Home"
     })
     return (
         <div>
@@ -22,6 +23,7 @@ const Home = () => {
        <Products></Products>
 
       <Reviews></Reviews>
+     
    
         </div>
     );

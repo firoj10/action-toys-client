@@ -34,10 +34,10 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
 
 
     
-        const updateToy = { photo,  sellername, price, rating, availablequantity, 
+        const updateToy = { photo,subcategoris,selleremail,name,  sellername, price, rating, availablequantity, 
             detaildescription }
 
-            fetch(`http://localhost:5000/actionToy/${_id}`,{
+            fetch(`https://action-toys-server-seven.vercel.app/actionToy/${_id}`,{
                 method: 'PUT',
                 headers:{
                     'content-type': 'application/json'
@@ -68,7 +68,7 @@ const {_id, photo, name,  sellername, price,  rating, availablequantity,
                         <span className="label-text">Toy Name</span>
                     </label>
                     <label className="input-group">
-                        <input type="text" defaultValue={name}  name="name" placeholder="coffee Name"
+                        <input type="text" defaultValue={name}  name="name" placeholder="toy Name"
                             className="input input-bordered w-full" required/>
                     </label>
                 </div> 

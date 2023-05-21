@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 const AddToy = () => {
     useEffect(()=>{
-        document.title = " | AddToy"
+        document.title = " HeroToys | AddToy"
     })
 
     const {user}= useContext(AuthContext)
@@ -34,7 +34,7 @@ const AddToy = () => {
             detaildescription }
        
         //send data to server
-        fetch('http://localhost:5000/actionToy', {
+        fetch('https://action-toys-server-seven.vercel.app/actionToy', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -68,7 +68,7 @@ const AddToy = () => {
                             <span className="label-text">Toy Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="name" placeholder="coffee Name"
+                            <input type="text" name="name" placeholder="toy Name"
                                 className="input input-bordered w-full" required />
                         </label>
                     </div>

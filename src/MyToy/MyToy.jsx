@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const MyToy = () => {
   useEffect(()=>{
-    document.title = " | MyToy"
+    document.title = " HeroToys | MyToy"
 })
   const { user } = useContext(AuthContext);
   const [mytoys, setmytoys] = useState([]);
@@ -14,7 +14,7 @@ const MyToy = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myToy/${user?.email}?order=${ isAsc ? 'asc' : 'desc'}`)
+    fetch(`https://action-toys-server-seven.vercel.app/myToy/${user?.email}?order=${ isAsc ? 'asc' : 'desc'}`)
     .then((res) => res.json())
     .then((data) => {
       setmytoys(data);
@@ -38,7 +38,7 @@ const MyToy = () => {
     }).then((result) => {
 
         if(result.isConfirmed){
-          fetch(`http://localhost:5000/actionToy/${_id}`,{
+          fetch(`https://action-toys-server-seven.vercel.app/actionToy/${_id}`,{
             method: 'DELETE'
           })
           .then(res => res.json())
@@ -77,7 +77,6 @@ const MyToy = () => {
                 <th>selleremail</th>
                 <th>rating</th>
                 <th>availablequantity</th>
-                <th>details description</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -95,7 +94,6 @@ const MyToy = () => {
                         <td >{data?.selleremail}</td>
                         <td >{data?.rating}</td>
                         <td >{data?.availablequantity}</td>
-                        <td >{data?.detaildescription}</td>
                         
                     <Link to={`/updateToy/${data._id}`}><button className=" p-3 text-white bg-orange-900 rounded">Update Toy</button></Link>
                     <button

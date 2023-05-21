@@ -6,7 +6,7 @@ import { FaGoogle} from "react-icons/fa";
 
 const Login = () => {
   useEffect(()=>{
-    document.title = " | Login"
+    document.title = " HeroToys | Login"
 })
   const { sinInWithGoogle,  singIn} = useContext(AuthContext)
   const navigate = useNavigate();
@@ -86,7 +86,7 @@ const Login = () => {
         
              <FaGoogle /> Login with Google</button>
 </form>
-<p className='my-4 text-center'>New to Car Doctors <Link className='text-orange-900 text-2xl underline' to="/register">Register now</Link></p>
+<p className='my-4 text-center'>New to action Toy <Link className='text-orange-900 text-2xl underline' to="/register">Register now</Link></p>
 <p className="text-orange-900 text-2xl">{error}</p>
 </div>
 </div>

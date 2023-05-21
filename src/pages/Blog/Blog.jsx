@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const Blog = () => {
     useEffect(()=>{
-        document.title = " | Blog"
+        document.title = " HeroToys | Blog"
     })
     return (
         <div className="p-10" data-aos="fade-up"data-aos-duration="3000">

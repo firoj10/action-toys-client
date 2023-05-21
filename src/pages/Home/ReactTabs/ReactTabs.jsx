@@ -18,21 +18,21 @@ const ReactTabs = () => {
     const [childrenToys, setmchildrenToy] = useState(null);
 
     useEffect(() => {
-      fetch('http://localhost:5000/maleToy')
+      fetch('https://action-toys-server-seven.vercel.app/maleToy')
         .then((res) => res.json())
         .then((data) => {
           setmalesToy(data);
         });
     }, []);
     useEffect(() => {
-      fetch('http://localhost:5000/femaleToy')
+      fetch('https://action-toys-server-seven.vercel.app/femaleToy')
         .then((res) => res.json())
         .then((data) => {
           setmfemaleToy(data);
         });
     }, []);
     useEffect(() => {
-      fetch('http://localhost:5000/childrenToy')
+      fetch('https://action-toys-server-seven.vercel.app/childrenToy')
         .then((res) => res.json())
         .then((data) => {
           setmchildrenToy(data);

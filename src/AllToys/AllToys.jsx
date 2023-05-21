@@ -5,7 +5,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const AllToys = () => {
   useEffect(()=>{
-    document.title = " | AllToys"
+    document.title = " HeroToys | AllToys"
 })
     const actionToys = useLoaderData();
     const [results, setResults] = useState(actionToys.slice(0, 20));
@@ -18,7 +18,7 @@ const AllToys = () => {
     };
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/toySearchByName/${searchText}`)
+        fetch(`https://action-toys-server-seven.vercel.app/toySearchByName/${searchText}`)
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
