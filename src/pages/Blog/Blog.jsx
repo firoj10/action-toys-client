@@ -10,7 +10,7 @@ const Blog = () => {
            
           <div className="py-5">
           <h2 className="font-semibold text-orange-900 	text-2xl">What is an access token and refresh token? How do they work and where should we store them on the client-side?</h2>
-        <p>The access token allows for access to different APIs and protected resources. The refresh token lets you mint new access tokens. The id token from OpenID Connect (OIDC)
+        <p>The access token allows for access to different APIs and protected resources. The refresh token bangladesh ins  you mint new access tokens. The id token from OpenID Connect (OIDC)
              is used by the client to display information about the user
              As the name may suggest, an ID token is an artifact that client applications can use to consume the identity of a user. For example, the ID token can contain information about the name, email, and profile picture of a user</p>
         
@@ -19,7 +19,7 @@ const Blog = () => {
       <div className="py-5" data-aos="fade-up"data-aos-duration="3000">
       <h2 className="font-semibold text-orange-900	text-2xl">Compare SQL and NoSQL databases?</h2>
       <p>SQL databases are vertically scalable, while NoSQL databases are horizontally scalable. SQL databases are table-based, while NoSQL databases are document, key-value, graph, or wide-column stores. SQL databases are better for multi-row transactions,
-             while NoSQL is better for unstructured data like documents or JSON</p>
+             while NoSQL is better for unstructured data like documents or  used by the client to display information about the user JSON</p>
         
       </div>
         
