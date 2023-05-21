@@ -6,7 +6,7 @@ const Footer = () => {
   <div >
   <img className='rounded-full h-12 w-12'  src={logo}  />
 
-    <p className="text-white">Super hero .<br/>Providing reliable tech since 1992</p>
+    <p className="text-white">Super hero .<br/>Providing reliable tech since 1992 Bangladesh</p>
   </div> 
   <div >
     <span className="footer-title text-white"> Toy Services </span> 
