@@ -86,7 +86,7 @@ const MyToy = () => {
             {mytoys?.map((data) => {
                 return (
                     <tr key={data._id}>
-                        <td> <img className="h-4 w-5" src={data?.photo} alt="" /></td>
+                        <td> <img className="h-7 w-7" src={data?.photo} alt="" /></td>
                         <td >{data?.sellername}</td>
                         <td >{data?.name}</td>
                         <td >{data?.subcategoris}</td>
