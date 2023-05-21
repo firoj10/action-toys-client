@@ -23,7 +23,7 @@ const Footer = () => {
     <a className="link link-hover text-white">Press kit</a>
   </div> 
   <div >
-    <span className="footer-title text-white">Legal</span> 
+    <span className="footer-title text-white">Legal Trast</span> 
     <a className="link link-hover text-white">Terms of use</a> 
     <a className="link link-hover text-white">Privacy policy</a> 
     <a className="link link-hover text-white">Cookie policy</a>
