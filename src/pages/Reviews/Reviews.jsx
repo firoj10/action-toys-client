@@ -3,7 +3,7 @@ import  img from "./../../assets/7.jpg"
 const Reviews = () => {
     return (
 <div className="my-16 ">
-  <h2 className="text-center text-4xl font-bold mt-70 mb-10 text-orange-900">SuperToy Review</h2>
+  <h2 className=" text-4xl font-bold mt-70 mb-10 text-orange-900">SuperToy Review</h2>
 <div className="hero " data-aos="fade-up"data-aos-duration="3000">
   <div className="hero-content flex-col lg:flex-row">
     <img src={img} className="max-auto rounded-lg shadow-2xl" />

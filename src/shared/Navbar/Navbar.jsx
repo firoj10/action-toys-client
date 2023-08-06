@@ -13,19 +13,19 @@ const Navbar = () => {
       .catch(error => console.error(error))
   }
   const navItems = <>
-    <li className="text-white   text-xl"><Link to="/">Home</Link></li>
-    <li className="text-white  text-xl "><Link to="/alltoys">All Toys</Link></li>
+    <li className="text-white   text-xl"><Link to="/">HOME</Link></li>
+    <li className="text-white  text-xl "><Link to="/alltoys">ALL TOYS</Link></li>
     <>
 
 
-      <li className="text-white   text-xl"><Link to="/addToy">Add Toy</Link></li>
-      <li className="text-white   text-xl"><Link to="blog">Blogs</Link></li>
+      <li className="text-white   text-xl"><Link to="/addToy">ADD TOY</Link></li>
+      <li className="text-white   text-xl"><Link to="blog">BLOGS</Link></li>
       {
         user?.email ? <>
-          <li className="text-white   text-xl"><Link to="/myToy">My Toy</Link></li>
+          <li className="text-white   text-xl"><Link to="/myToy">MY TOY</Link></li>
           <button className="text-white  mr-auto text-xl"
-            onClick={handleLogout}>Logout</button>
-        </> : <Link to='/login'><button className="text-white  text-xl mt-3" >Login</button></Link>
+            onClick={handleLogout}>LOGOUT</button>
+        </> : <Link to='/login'><button className="text-white  text-xl mt-3" >LOGIN</button></Link>
       }
       {user && <Tippy className='text-white px-2 bg-dark' content={user?.displayName}>
         <img className='rounded-full h-12  mx-2 w-12' src={user?.photoURL} />
@@ -48,7 +48,7 @@ const Navbar = () => {
         <Link className="btn btn-ghost normal-case  pl-20 text-xl">
 
           <img className='rounded-full h-10 w-10' src={icon} />
-          <span className="font-4xl text-white">HeroToys</span>
+          <span className="font-4xl text-white">HEROTOYS</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex ">

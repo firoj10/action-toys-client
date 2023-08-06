@@ -10,13 +10,13 @@ import img6 from "./../../../assets/gallery/6.jpg"
 const Gallery = () => {
     return (
        <>
-       <h2 className="text-center text-4xl font-bold pt-20 pb-8 text-orange-900">Toy Gallery</h2>
+       <h2 className=" text-4xl font-bold py-20 pt-20 pb-8 text-orange-900"> Top Products</h2>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-center mx-auto">
    
     <div className="justify-center items-center" data-aos="fade-up"data-aos-duration="3000"> 
     <div className="card w-auto bg-base-100 shadow-xl">
   <div className="card-body items-center" >
-  <figure><img    src={img6} className="h-[400px] w-full" alt="Shoes" /></figure>
+  <figure><img    src={img6} className="h-[300px] w-[300px]" alt="Shoes" /></figure>
     <h2 className="card-title text-orange-900">Ben Reilly</h2>
 
    
@@ -27,7 +27,7 @@ const Gallery = () => {
     <div className="justify-center items-center" data-aos="fade-up"data-aos-duration="3000">
     <div className="card w-auto bg-base-100 shadow-xl">
   <div className="card-body items-center">
-  <figure><img  className="h-[400px] w-full" src={img5} alt="Shoes" /></figure>
+  <figure><img  className="h-[300px] w-[300px]" src={img5} alt="Shoes" /></figure>
     <h2 className="card-title  text-orange-900">Wolverine</h2>
    
   </div>
@@ -37,7 +37,7 @@ const Gallery = () => {
     <div className="justify-center items-center" data-aos="fade-up"data-aos-duration="3000">
     <div className="card w-auto bg-base-100 shadow-xl">
   <div className="card-body items-center">
-  <figure><img  className="h-[400px] w-full"  src={img4} alt="Shoes" /></figure>
+  <figure><img  className="h-[300px] w-[300px]"  src={img4} alt="Shoes" /></figure>
     <h2 className="card-title  text-orange-900">Daredevil</h2>
    
   </div>
@@ -47,7 +47,7 @@ const Gallery = () => {
     <div className="justify-center items-center" data-aos="fade-up"data-aos-duration="3000">
     <div className="card w-auto bg-base-100 shadow-xl">
   <div className="card-body items-center">
-  <figure><img  className="h-[400px] w-full" src={img3} alt="Shoes" /></figure>
+  <figure><img  className="h-[300px] w-[300px]" src={img3} alt="Shoes" /></figure>
     <h2 className="card-title  text-orange-900">Spider-Man</h2>
    
   </div>
@@ -57,7 +57,7 @@ const Gallery = () => {
     <div className="justify-center items-center" data-aos="fade-up"data-aos-duration="3000">
     <div className="card w-auto bg-base-100 shadow-xl">
   <div className="card-body items-center">
-  <figure><img  className="h-[400px] w-full" src={img1} alt="Shoes" /></figure>
+  <figure><img  className="h-[300px] w-[300px]" src={img1} alt="Shoes" /></figure>
     <h2 className="card-title   text-orange-900">Hobgoblin!</h2>
    
   </div>
@@ -66,7 +66,7 @@ const Gallery = () => {
     <div className="justify-center items-center" data-aos="fade-up"data-aos-duration="3000">
     <div className="card w-auto bg-base-100 shadow-xl">
   <div className="card-body items-center">
-  <figure><img  className="h-[400px] w-full"  src={img2} alt="Shoes" /></figure>
+  <figure><img  className="h-[300px] w-[300px]"  src={img2} alt="Shoes" /></figure>
     <h2 className="card-title mb-0  text-orange-900">Ben Grimm!</h2>
    
   </div>

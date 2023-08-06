@@ -23,8 +23,9 @@ const Home = () => {
             <Gallery></Gallery>
             <ReactTabs></ReactTabs>
             <NewProducts></NewProducts>
-            <Products></Products>
             <ConstructionToys></ConstructionToys>
+            <Products></Products>
+          
             <Reviews></Reviews>
 
 

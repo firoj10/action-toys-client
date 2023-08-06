@@ -43,7 +43,7 @@ const ReactTabs = () => {
 
 
   return (
-    <div className='text-center' data-aos="fade-up" data-aos-duration="3000">
+    <div className='' data-aos="fade-up" data-aos-duration="3000">
       <h2 className='text-4xl font-bold pt-60 pb-10  text-orange-900'>Super Hero Categories </h2>
       <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
         <TabList>

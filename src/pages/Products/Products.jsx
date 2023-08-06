@@ -12,8 +12,8 @@ const Products = () => {
         
         
         <div  className="focus:outline-none">
-    <h2 className="text-center text-4xl pt-40 mt-6  font-bold text-orange-900">New SuperHeros</h2>
-            <div className="mx-auto container py-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+    <h2 className=" px-4 text-4xl pt-40 mt-6  font-bold text-orange-900">Trending Products </h2>
+            <div className="mx-auto container py-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5">
              
                  
                     <div  className=" bg-base-100 shadow-xl  focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto " data-aos="fade-up"data-aos-duration="3000">
@@ -44,7 +44,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none  text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none  text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none  text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none  text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
@@ -149,7 +149,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none  text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none  text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
@@ -211,7 +211,7 @@ const Products = () => {
                                     <h2  className="focus:outline-none text-lg dark:text-white font-semibold text-orange-900">super-Xx</h2>
                                     <p  className="focus:outline-none text-xs text-gray-600 dark:text-gray-200 pl-5">2 days ago</p>
                                 </div>
-                                <p  className="focus:outline-none text-xs text-gray-600 dark:text-gray-200 mt-2">super-Xx Shoot amazing videos</p>
+                                <p  className="focus:outline-none text-xs text-gray-600 dark:text-gray-200 mt-2">super-Xx Shootamazing amazing  amazing videos</p>
                                 <div className="flex mt-4">
                                     <div>
                                         <p  className="focus:outline-none text-xs text-gray-600 dark:text-gray-200 px-2 bg-gray-200 dark:bg-gray-700 py-1">12 months warranty</p>
@@ -221,7 +221,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none  text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none  text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
@@ -256,7 +256,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none  text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none  text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
@@ -291,7 +291,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between py-4">
-                                    <h2  className="focus:outline-none  text-xs font-semibold">Bay Area, San Francisco</h2>
+                                <button className="btn btn-outline btn-info">ADD +</button>
                                     <h3  className="focus:outline-none  text-xl font-semibold">$350</h3>
                                 </div>
                             </div>
