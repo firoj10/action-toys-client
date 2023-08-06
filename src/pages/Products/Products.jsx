@@ -16,14 +16,14 @@ const Products = () => {
             <div className="mx-auto container py-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2">
              
                  
-                    <div  className=" bg-base-100 shadow-xl  focus:outline-none mx-2 w-72 xl:mb-0 mb-8 " data-aos="fade-up"data-aos-duration="3000">
+                    <div  className=" bg-base-100 shadow-xl  focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto " data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="person capturing an image" src={m1}   className="focus:outline-none w-full h-44" />
+                            <img alt="person capturing an image" src={m1}   className="focus:outline-none w-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m1}  alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m1}  alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
@@ -51,14 +51,14 @@ const Products = () => {
                         </div>
                     </div>
                  
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto" data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="person capturing an image" src={m2}  className="focus:outline-none w-full h-44" />
+                            <img alt="person capturing an image" src={m2}  className="focus:outline-none w-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m2} alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m2} alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
@@ -86,14 +86,14 @@ const Products = () => {
                         </div>
                     </div>
                  
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto" data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="person capturing an image" src={m3}  className="focus:outline-none w-full h-44" />
+                            <img alt="person capturing an image" src={m3}  className="focus:outline-nonew-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m3}  alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m3}  alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
@@ -121,14 +121,14 @@ const Products = () => {
                         </div>
                     </div>
                  
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto" data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="person capturing an image" src={m4}  className="focus:outline-none w-full h-44" />
+                            <img alt="person capturing an image" src={m4}  className="focus:outline-none w-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m4}  alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m4}  alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
@@ -158,14 +158,14 @@ const Products = () => {
         
                
       
-                    <div  className="bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
+                    <div  className="bg-base-100 shadow-xl focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto" data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="girl texting" src={m5}  className="focus:outline-none w-full h-44" />
+                            <img alt="girl texting" src={m5}  className="focus:outline-none w-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m5}  alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m5}  alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
@@ -193,14 +193,14 @@ const Products = () => {
                         </div>
                     </div>
                    
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto" data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="girl texting" src={m6}  className="focus:outline-none w-full h-44" />
+                            <img alt="girl texting" src={m6}  className="focus:outline-none w-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m6}  alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m6}  alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
@@ -228,14 +228,14 @@ const Products = () => {
                         </div>
                     </div>
                    
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto" data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="girl texting" src={m7}  className="focus:outline-none w-full h-44" />
+                            <img alt="girl texting" src={m7}  className="focus:outline-none w-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m7}  alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m7}  alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
@@ -263,14 +263,14 @@ const Products = () => {
                         </div>
                     </div>
                    
-                    <div  className="  bg-base-100 shadow-xl focus:outline-none mx-2 w-72 xl:mb-0 mb-8" data-aos="fade-up"data-aos-duration="3000">
+                    <div  className="  bg-base-100 shadow-xl focus:outline-none  w-72 xl:mb-0 mb-8 mx-auto" data-aos="fade-up"data-aos-duration="3000">
                         <div>
-                            <img alt="girl texting" src={m8}  className="focus:outline-none w-full h-44" />
+                            <img alt="girl texting" src={m8}  className="focus:outline-none w-[200px] h-[200px]" />
                         </div>
                         <div className="bg-white dark:bg-gray-800">
                             <div className="flex items-center justify-between px-4 pt-4">
                                 <div>
-                                    <img className="dark:bg-white focus:outline-none" src={m8} alt="bookmark" />
+                                    <img className="dark:bg-white focus:outline-none w-[100px] h-[100px]" src={m8} alt="bookmark" />
                                 </div>
                                 <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
                                     <p  className="focus:outline-none text-xs text-yellow-700">Featured</p>
